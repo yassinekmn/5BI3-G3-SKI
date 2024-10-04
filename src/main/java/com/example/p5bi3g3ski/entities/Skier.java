@@ -1,5 +1,4 @@
-package tn.esprit.spring.entities;
-
+package com.example.p5bi3g3ski.entities;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
@@ -8,6 +7,7 @@ import java.util.Set;
 import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,7 +24,7 @@ import lombok.experimental.FieldDefaults;
 public class Skier implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	Long numSkier;
 	String firstName;
 	String lastName;

@@ -1,11 +1,11 @@
-package tn.esprit.spring.entities;
+package com.example.p5bi3g3ski.entities;
 
+
+import java.awt.*;
 import java.io.Serializable;
 import java.util.Set;
 
-import javax.persistence.*;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,7 +22,7 @@ import lombok.experimental.FieldDefaults;
 public class Piste implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	Long numPiste;
 	String namePiste;
 	@Enumerated(EnumType.STRING)

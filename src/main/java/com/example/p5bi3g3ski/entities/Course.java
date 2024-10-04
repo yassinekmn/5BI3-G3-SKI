@@ -26,13 +26,13 @@ public class Course implements Serializable {
 	int level;
 	@Enumerated(EnumType.STRING)
 	TypeCourse typeCourse;
-	@Enumerated(EnumType.STRING)
-	Support support;
+	//@Enumerated(EnumType.STRING)
+	//Support support;
 	Float price;
 	int timeSlot;
 
-	@JsonIgnore
-	@OneToMany(mappedBy= "course")
-	Set<Registration> registrations;
+	//@JsonIgnore
+	//@OneToMany(mappedBy= "course")
+	//Set<Registration> registrations;
 
 }

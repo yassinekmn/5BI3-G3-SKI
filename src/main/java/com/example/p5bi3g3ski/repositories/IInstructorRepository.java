@@ -1,9 +1,9 @@
-package tn.esprit.spring.repositories;
+package com.example.p5bi3g3ski.repositories;
 
 
+
+import com.example.p5bi3g3ski.entities.*;
 import org.springframework.data.jpa.repository.JpaRepository;
-import tn.esprit.spring.entities.Instructor;
-
 
 
 public interface IInstructorRepository extends JpaRepository<Instructor, Long> {

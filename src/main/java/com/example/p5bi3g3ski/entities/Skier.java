@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
 
-import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -31,20 +30,20 @@ public class Skier implements Serializable {
 	LocalDate dateOfBirth;
 	String city;
 
-	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-	Subscription subscription;
+	//@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+	//Subscription subscription;
 
-	@JsonIgnore
+	/*@JsonIgnore
 	@ManyToMany
 	@JoinTable(
 			name = "excursion",
 			joinColumns = @JoinColumn(name = "numSkier"),
 			inverseJoinColumns = @JoinColumn(name = "numPiste"))
-	private Set<Piste> pistes;
+	private Set<Piste> pistes;*/
 
 
-	@OneToMany(mappedBy = "skier")
-	Set<Registration> registrations;
+	//@OneToMany(mappedBy = "skier")
+	//Set<Registration> registrations;
 
 
 
